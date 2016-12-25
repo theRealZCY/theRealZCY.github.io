@@ -35,15 +35,27 @@
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
+      var mouseX = 0;
+      var mouseY = 0;
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
-        var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        mouseX = mousePos.x;
+        mouseY = mousePos.y;
+      }, false);
+
+      //moving
+      function update() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
         var imgMoving = new Image();
         imgMoving.onload = function() {
-          context.drawImage(imgMoving, mousePos.x, mousePos.y);
+          context.drawImage(imgMoving, mouseX, mouseY);
         }
         imgMoving.src = 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t';
-      }, false);
+
+        requestAnimationFrame(update);
+      }
+
+      update();
 
       //image
       imageObj.onload = function() {
