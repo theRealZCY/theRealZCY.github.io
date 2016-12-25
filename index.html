@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <canvas id="myCanvas" width="800" height="800"></canvas>
+    <canvas id="myCanvas" width="800" height="800" style="background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t')"></canvas>
     <script>
 
       var canvas = document.getElementById('myCanvas');
@@ -29,7 +29,6 @@
         context.drawImage(imageObj, 150, 400);
       };
       imageObj.src = 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t';
-      document.body.style.background = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t('"+canvas.toDataURL()+"')";
     </script>
   </body>
 </html>
