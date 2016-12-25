@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <canvas id="myCanvas" width="800" height="800"></canvas>
     <script>
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
@@ -18,7 +18,9 @@
       context.font = '40pt Calibri';
       context.fillStyle = 'blue';
       context.fillText('Hello World!', 150, 100);
-      context.fillText('The website is under construction.', 150, 100);
+      context.font = '20pt Calibri';
+      context.fillStyle = 'blue';
+      context.fillText('The website is under construction.', 150, 300);
 
       //image
       imageObj.onload = function() {
