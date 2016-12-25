@@ -17,12 +17,7 @@
       var imageObj = new Image();
 
       // do cool things with the context
-      context.font = '40pt Calibri';
-      context.fillStyle = 'blue';
-      context.fillText('Hello World!', 150, 100);
-      context.font = '20pt Calibri';
-      context.fillStyle = 'blue';
-      context.fillText('The website is under construction.', 150, 300);
+
 
       //mouse coordination
       function getMousePos(canvas, evt) {
@@ -48,6 +43,12 @@
         var imgMoving = new Image();
         imgMoving.onload = function() {
           context.clearRect(0, 0, canvas.width, canvas.height);
+          context.font = '40pt Calibri';
+          context.fillStyle = 'blue';
+          context.fillText('Hello World!', 150, 100);
+          context.font = '20pt Calibri';
+          context.fillStyle = 'blue';
+          context.fillText('The website is under construction.', 150, 300);
           context.drawImage(imgMoving, mouseX, mouseY);
         }
         imgMoving.src = 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t';
