@@ -18,6 +18,13 @@
       context.font = '40pt Calibri';
       context.fillStyle = 'blue';
       context.fillText('Hello World!', 150, 100);
+      context.fillText('The website is under construction.', 150, 100);
+
+      //image
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 40, 40);
+      };
+      imageObj.src = 'https://www.cs.utah.edu/~gk/atwork/img/sqrman2.gif';
     </script>
   </body>
 </html>
