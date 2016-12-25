@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <canvas id="myCanvas" width="800" height="800" style="background: url('http://pics.clipartpng.com/Under_Construction_Warning_Sign_PNG_Clipart-839.png')"></canvas>
+    <canvas id="myCanvas" width="800" height="800" style="background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t')"></canvas>
     <script>
 
       var canvas = document.getElementById('myCanvas');
@@ -23,6 +23,27 @@
       context.font = '20pt Calibri';
       context.fillStyle = 'blue';
       context.fillText('The website is under construction.', 150, 300);
+
+      //mouse coordination
+      function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.clientX - rect.left,
+          y: evt.clientY - rect.top
+        };
+      }
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      canvas.addEventListener('mousemove', function(evt) {
+        var mousePos = getMousePos(canvas, evt);
+        var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        var imgMoving = new Image();
+        imgMoving.onload = function() {
+          context.drawImage(imgMoving, mousePos.x, mousePos.y);
+        }
+        imgMoving.src = 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkZZj_dyk4_jPbeSTmHH9v8vYbXTjR8dZMOFYqAOeJQ9lEPl0t';
+      }, false);
 
       //image
       imageObj.onload = function() {
