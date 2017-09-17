@@ -11,20 +11,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Styles -->
+	<link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Amatic+SC' />
 	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+
+<div class="navblock">
+	<button>
+		<a href="index.html#container" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">About Me</a>
+	</button>
+	<button>
+		<a href="games.html" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">Games</a>
+	</button>
+	<button>
+		<a href="arts.html" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">Arts</a>
+	</button>
+	<button>
+		<a href="index.html#resume" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">Resume</a>
+	</button>
+	<button>
+		<a href="index.html#resume" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">Contact</a>
+	</button>
+<!-- <a href="arts.html">Arts</a> | <a href="#">About Me</a> | <a href="#">Contact Me</a> | <a href="#">My Photos</a> | <a href="#">My Videos</a> -->
+</div>
 </head>
+
 <body>
+
+
 	<div id="container1" class="container">
 		<ul id="scene1" class="scene">
 			<li class="layer" data-depth="0.00"><img src="images/layer7.png"></li>
-			<li class="layer" data-depth="1.00"><img src="img/cover.png"  href="https://www.youtube.com/watch?v=B13fyLKoUWw"></li>
-
+			<li class="layer" data-depth="1.00"><img src="img/new_cover.png"  href="https://www.youtube.com/watch?v=B13fyLKoUWw"></li>
+<!-- 			<li class="layer" data-depth="0.00"><img src="img/arts.png" width="10%" href="/arts/"></li>
+			<li class="layer" data-depth="0.00"><img src="img/projects.png" width="10%" href="/projects/"></li> -->
 		</ul>
 	</div>
 	<!-- Scripts -->
 	<script src="deploy/parallax.js"></script>
+
 	<script>
 
 	// Pretty simple huh?
@@ -32,25 +57,24 @@
 	var parallax1 = new Parallax(scene1);
 
 	</script>
+</body>
+
+
+
+<body>
 
 	<div id="container" class="container">
 		<ul id="scene" class="scene">
-			<li class="layer" data-depth="0.00"><img src="images/layer9.png"></li>
-			<li class="layer" data-depth="0.00"><img src="images/layer6.png"></li>
-			<li class="layer" data-depth="0.20"><img src="images/layer1.png"></li>
-			<li class="layer" data-depth-x="0.20" data-depth-y="-0.20"><img src="images/layer2.png"></li>
-			<li class="layer" data-depth-x="-0.20" data-depth-y="-0.20"><img src="images/layer3.png"></li>
-			<li class="layer" data-depth="0.40" data-depth-y="-0.30"><img src="images/layer4.png"></li>
-			<li class="layer" data-depth="0.20"><img src="images/layer5.png"></li>
-			<li class="layer" data-depth="0.00"><img src="images/layer8.png"></li>
-			<li class="layer" data-depth="0.00"><img src="images/button1.png" alt="" usemap="#map1485236637599">
-			<map id="map1485236637599" name="map1485236637599">
-				<area shape="rect" coords="61,35,682,503" title="" alt="" href="https://youtu.be/B13fyLKoUWw" target="_blank">
-				<area shape="rect" coords="731,21,1351,493" title="" alt="" href="https://youtu.be/qKlDXk3Ob6I" target="_blank">
-				<area shape="rect" coords="702,507,1339,990" title="" alt="" href="https://youtu.be/HG4x59lfzX8" target="_blank">
-				<area shape="rect" coords="50,862,737,1401" title="" alt="" href="https://www.youtube.com/watch?v=y1j3DBrdNiQ" target="_blank">
-				<area shape="rect" coords="772,988,1537,1668" title="" alt="" href="https://youtu.be/1lYtIWOTK24" target="_self">
-			</map>
+			<li class="layer" data-depth="0.00"><img src="images/layer9_up.png"></li>
+				<!-- <li class="layer" data-depth="0.00"><img src="images/layer8.png"></li> -->
+			<li class="layer" data-depth-x="0.20" data-depth-y="-0.20"><img src="images/base.png"></li>
+			<div class="navblock">
+				<li class="layer" data-depth-x="0.10" data-depth-y="-0.10"><a style="text-decoration:none; font-family: 'Amatic SC'; color: Black; padding-left:550px; font-size: 60px">Introduction<a></li>
+			</div>
+
+			<li class="layer" data-depth="0.20"><img src="images/layer6.png"></li>
+
+
 		</li>
 		</ul>
 	</div>
@@ -66,5 +90,43 @@
 
 	</script>
 
+		<div id="resume" class="container">
+		<ul id="scene2" class="scene">
+
+				<li class="layer" data-depth="0.00"><img src="images/layer9_bottom.png"></li>
+				<li class="layer" data-depth="0.00"><img src="images/portrait.png"></li>
+
+
+		</li>
+		</ul>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="deploy/parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene2');
+	var parallax = new Parallax(scene);
+
+	</script>
+
 </body>
 </html>
+
+<!-- <li class="layer" data-depth="0.20"><img src="images/layer1.png"></li> -->
+<!-- <li class="layer" data-depth-x="0.20" data-depth-y="-0.20"><img src="images/layer2.png"></li>
+			<li class="layer" data-depth-x="-0.20" data-depth-y="-0.20"><img src="images/layer3.png"></li>
+			<li class="layer" data-depth="0.40" data-depth-y="-0.30"><img src="images/layer4.png"></li>
+			<li class="layer" data-depth="0.20"><img src="images/layer5.png"></li>
+			<li class="layer" data-depth="0.00"><img src="images/layer8.png"></li>
+			<li class="layer" data-depth="0.00"><img src="images/button1.png" alt="" usemap="#map1485236637599">
+			<map id="map1485236637599" name="map1485236637599">
+				<area shape="rect" coords="61,35,682,503" title="" alt="" href="https://youtu.be/B13fyLKoUWw" target="_blank">
+				<area shape="rect" coords="731,21,1351,493" title="" alt="" href="https://youtu.be/qKlDXk3Ob6I" target="_blank">
+				<area shape="rect" coords="702,507,1339,990" title="" alt="" href="https://youtu.be/HG4x59lfzX8" target="_blank">
+				<area shape="rect" coords="50,862,737,1401" title="" alt="" href="https://www.youtube.com/watch?v=y1j3DBrdNiQ" target="_blank">
+				<area shape="rect" coords="772,988,1537,1668" title="" alt="" href="https://youtu.be/1lYtIWOTK24" target="_self">
+			</map>
+		</li> -->

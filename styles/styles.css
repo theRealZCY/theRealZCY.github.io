@@ -23,26 +23,26 @@ label {
 }
 
 button {
-  border: 10px solid #00FFAA;
+  border: 1px solid   #000000;
   font-family: monospace;
-  position: absolute;
+  /*position: absolute;*/
   line-height: 60px;
-  text-align: right;
+  text-align: center;
   padding: 0 1.2em;
-  background: #444;
-  font-size: 24px;
+  background: #000000;
+  font-size: 30px;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   outline: none;
-  height: 80px;
-  width: 80%;
+  height: 50px;
+  width: 10%;
   top: 260px;
   margin: 0;
-  left: 10%;
+  left: 20%;
 }
 
 button:hover {
-  background: #00FFAA;
+  background:   #949494;
 }
 
 input[type=checkbox] + label:before {
@@ -59,6 +59,10 @@ input[type=checkbox] + label:before {
 input[type=checkbox]:checked + label:before {
   background: #00FFAA;
 }
+.navblock{ width:200%; background:   #000000;margin:0 auto; text-align:left}
+.navblock span{ width:30%; margin:0 1%;  }
+
+
 
 .container {
   position: relative;
