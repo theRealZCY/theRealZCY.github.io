@@ -25,7 +25,7 @@ label {
 button {
   border: 1px solid   #000000;
   font-family: monospace;
-  /*position: absolute;*/
+/*  position: relative;*/
   line-height: 60px;
   text-align: center;
   padding: 0 1.2em;
@@ -35,7 +35,7 @@ button {
   display: inline-block;
   outline: none;
   height: 50px;
-  width: 19%;
+  width: 20%;
   top: 260px;
   margin: 0;
   left: 20%;
