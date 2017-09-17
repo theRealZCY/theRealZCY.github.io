@@ -223,7 +223,7 @@ mark {
 p,
 pre {
   font-size:140%;
-  line-height: 150%;
+  /*line-height: 150%;*/
   margin: 1em 0;
 }
 
