@@ -127,14 +127,25 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-
-h2 {
-  position:relative;
-  font: 40 10px/1.2 'Arizona SC', Helvetica, sans-serif;
-  margin: 500%;
-  /*color: white;*/
-  /*text-shadow: 3px 3px 3px #fff;*/
+h2{
+  text-transform: uppercase;
+  margin-top: -.5em;
 }
+/*
+hgroup{
+  @include transform(translate(-50%, -50%));
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0,0,0,.2);
+  z-index: 2;
+}
+*/
 
 h3 {
     font-size: 1.17em;
@@ -211,7 +222,9 @@ mark {
 
 p,
 pre {
-    margin: 1em 0;
+  font-size:140%;
+  line-height: 150%;
+  margin: 1em 0;
 }
 
 /**
@@ -223,7 +236,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
+    font-family: 'courier new', monospace;
     font-size: 1em;
 }
 

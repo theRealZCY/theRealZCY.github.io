@@ -63,6 +63,15 @@ input[type=checkbox]:checked + label:before {
 .navblock{ width:100%; background:   #000000;margin:0 auto; text-align:left}
 .navblock span{ width:30%; margin:0 1%;  }
 
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);*/
+  transform-style: inherit;
+}
 
 
 .container {
@@ -99,11 +108,6 @@ input[type=checkbox]:checked + label:before {
 
 .aspect {
   opacity: 0.2;
-}
-
-.layer.one {
-    -webkit-transform: translateZ(-.25px);
-  transform: translateZ(-.25px);
 }
 
 .layer:nth-child(1) {
