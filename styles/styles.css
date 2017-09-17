@@ -101,6 +101,11 @@ input[type=checkbox]:checked + label:before {
   opacity: 0.2;
 }
 
+.layer.one {
+    -webkit-transform: translateZ(-.25px);
+  transform: translateZ(-.25px);
+}
+
 .layer:nth-child(1) {
   opacity: 1.0;
 }
