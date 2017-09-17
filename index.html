@@ -57,7 +57,8 @@
 
 
 
-<body onresize="setFontSize()" onload="setFontSize()">
+<body>
+
 
 	<div id="container" class="container">
 		<ul id="scene" class="scene">
@@ -67,17 +68,33 @@
 
 			<li class="layer" data-depth-x="0.10" data-depth-y="-0.10">
 				<div id="slide" class="slide">
-					<p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 2em">All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.</p>
+					<p style="text-decoration:none; font-family: 'Amatic SC'; color: white;">All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.</p>
 				</div>
 			</li>
-
-
 			<li class="layer" data-depth="0.20"><img src="images/layer6.png"></li>
 
 
 		</li>
 		</ul>
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.fittext.js"></script>
+	<script>
+	  jQuery("#slide").fitText(1.2, { minFontSize: '20px', maxFontSize: '30px' });
+	</script>
+		<!-- Scripts -->
+	<script src="deploy/parallax.js"></script>
+	<script>
+
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+</body>
+
+<body>
 
 
 	<!-- Scripts -->
@@ -112,6 +129,8 @@
 	var parallax = new Parallax(scene);
 
 	</script>
+
+
 
 </body>
 
