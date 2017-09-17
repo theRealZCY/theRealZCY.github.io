@@ -34,12 +34,25 @@
 
     <div id="container1" class="container">
         <ul id="scene1" class="scene">
-            <li class="layer" data-depth="0.00"><img src="images/layer7.png"></li>
+            <li class="layer" data-depth="0.00"><img src="img/background.png"></li>
+            <li class="layer" data-depth="0.00">
+                <div id="slide" class="slide">
+                    <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">UNDER CONSTRUCTION</p>
+                </div>
+            </li>
 
         </ul>
     </div>
     <!-- Scripts -->
+
     <script src="deploy/parallax.js"></script>
 
+    <script>
+
+    // Pretty simple huh?
+    var scene1 = document.getElementById('scene1');
+    var parallax1 = new Parallax(scene1);
+
+    </script>
 </body>
 </html>
