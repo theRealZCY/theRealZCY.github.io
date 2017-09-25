@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.parallax-window {
+    /* The image used */
+    background-image: url("img/background.png");
 
+    /* Set a specific height */
+    height:100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-window2 {
+    /* The image used */
+    background-image: url("img/runner3.png");
+
+    /* Set a specific height */
+    height:100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style> 
     <meta charset="utf-8">
 
     <title>Congyao Zheng</title>
@@ -32,60 +59,41 @@
 
 </head>
 <body>
+  <div style="height:70%;background-image:url(images/layer1.png);text-decoration:none; font-family: 'Amatic SC'; color: white;font-size: 60px ">
+    <p>Under Construction...</p>
+    <p>Under Construction...</p>
+    <p align="right" style="color: black";> Under Construction..................... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <!-- <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">Under Construction...</p> -->
+</div>
+  <div class = "parallax-window"> </div>
+  <div style="height:70%;background-image:url(images/layer2.png);text-decoration:none; font-family: 'Amatic SC'; color: white;font-size: 60px ">
+    <p>Under Construction...</p>
+    <p>Under Construction...</p>
+    <p align="center" style="color: black";> Under Construction..................... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <!-- <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">Under Construction...</p> -->
+</div>
 
-    <div id="container1" class="container">
-        <ul id="scene1" class="scene">
-            <li class="layer" data-depth="0.00"><img src="img/background.png"></li>
-            <li class="layer" data-depth="0.00">
-                <div id="slide" class="slide">
-                    <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">Under Construction...</p>
+<div class="parallax-window"></div>
+<div style="height:70%;background-image:url(images/layer3small.png);text-decoration:none; font-family: 'Amatic SC'; color: black;font-size: 60px ">
+    <p>Under Construction...</p>
+</div>
+<div class="parallax-window"></div>
+<div style="height:70%;background-image:url(images/layer4.png);text-decoration:none; font-family: 'Amatic SC'; color: black;font-size: 60px ">
+    <p>Under Construction...</p>
+</div>
+<div class="parallax-window"></div>
 
-                </div>
-            </li>
-            <!-- <li class="layer1" data-depth="1.00">
-              <img src = "img/runner3.png" width='50%'/>
-            </li> -->
-<!--             <table border=0>
-            <tr>
-            <td>
-            <img src="prj/dancer.jpg" width="80%"/>
-            <p style="font-size: 14px">Fan Dancer </p>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <img src="prj/ski.jpg" width="80%"/>
-            <p style="font-size: 14px">Curve  </p>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <img src="dunkirk.jpg" width="100%"/>
-            <p style="font-size: 14px">After with some pixels remain (frequency = 4), color of high_frequencies shows</p>
-            </td>
-            </tr> -->
 
-            <!-- </table> -->
-<!--             <li class="layer" data-depth="0.00">
-
-              <a href="#" id="button1" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">div1</a>
-
-              <div class="menu">
-                <ul>
-                  <li><img href="#" src="images/base.png"></li>
-                  <li><a href="#"> div1div1div1div1div1</a></li>
-                </ul>
-              </div>
-            </li> -->
-
-        </ul>
-    </div>
     <!-- Scripts -->
 
     <script src="deploy/parallax.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script>
     jQuery("#slide").fitText(1.2, { minFontSize: '5px', maxFontSize: '30px' });
+    $('.parallax-window').parallax({
+    naturalWidth: 600,
+    naturalHeight: 400
+  });
   </script>
   <SCRIPT>
     function isHidden(oDiv){
