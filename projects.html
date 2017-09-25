@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="slide.css">
 
 <!-- <div class="navblock"> -->
     <button>
@@ -37,15 +38,84 @@
             <li class="layer" data-depth="0.00"><img src="img/background.png"></li>
             <li class="layer" data-depth="0.00">
                 <div id="slide" class="slide">
-                    <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">UNDER CONSTRUCTION</p>
+                    <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">Under Construction...</p>
+                    <img src = "img/runner3.png"/>
                 </div>
             </li>
+            <table border=0>
+            <tr>
+            <td>
+            <img src="prj/dancer.jpg" width="80%"/>
+            <p style="font-size: 14px">Fan Dancer </p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <img src="prj/ski.jpg" width="80%"/>
+            <p style="font-size: 14px">Curve  </p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <img src="dunkirk.jpg" width="100%"/>
+            <p style="font-size: 14px">After with some pixels remain (frequency = 4), color of high_frequencies shows</p>
+            </td>
+            </tr>
+
+            </table>
+<!--             <li class="layer" data-depth="0.00">
+
+              <a href="#" id="button1" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">div1</a>
+
+              <div class="menu">
+                <ul>
+                  <li><img href="#" src="images/base.png"></li>
+                  <li><a href="#"> div1div1div1div1div1</a></li>
+                </ul>
+              </div>
+            </li> -->
 
         </ul>
     </div>
     <!-- Scripts -->
 
     <script src="deploy/parallax.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+    jQuery("#slide").fitText(1.2, { minFontSize: '5px', maxFontSize: '30px' });
+  </script>
+  <SCRIPT>
+    function isHidden(oDiv){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+    }
+     function showhide(id) {
+  if (document.getElementById) {
+    var divid = document.getElementById(id);
+    var divs = document.getElementsByClassName("hideable");
+    for (var i = 0; i < divs.length; i = i + 1) {
+      $(divs[i]).fadeOut("slow");
+    }
+    $(divid).fadeIn("slow");
+  }
+  var min = "-100px", // remember to set in css the same value
+    max = "0px";
+
+$(function() {
+
+  $("#button1").click(function() {
+
+    if($(".menu").css("marginLeft") == min)
+      $(".menu").animate({ marginLeft: max });
+    else
+      $(".menu").animate({ marginLeft: min });
+
+  });
+
+});
+  return false;
+}
+  </SCRIPT>
 
     <script>
 
@@ -54,5 +124,21 @@
     var parallax1 = new Parallax(scene1);
 
     </script>
+
+
 </body>
+
+<!--  <BODY>
+  <div style="cursor:hand" onclick="showhide('div1')">
+      <button><a href="#div1" style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 30px">div1</a></button>
+  </div>
+  <div id="div1" class="container" style="display:none">
+    <img src="images/base.png">
+    div1div1div1div1div1
+  </div>
+  <DIV style="cursor:hand; display:none" onclick="isHidden('div2')">div2</DIV>
+  <DIV id="div2">div2div2div2div2div2</DIV>
+  <DIV style="cursor:hand" onclick="isHidden('div3')">div3</DIV>
+  <DIV id="div3">div3div3div3div3div3</DIV>
+ </BODY> -->
 </html>
