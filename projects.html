@@ -7,7 +7,7 @@
     background-image: url("img/background.png");
 
     /* Set a specific height */
-    height:100%;
+    height:75%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -15,18 +15,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax-window2 {
-    /* The image used */
-    background-image: url("img/runner3.png");
-
-    /* Set a specific height */
-    height:100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*table{
+  border-spacing:5px;
+}*/
+td img {
+  vertical-align: middle;
+  background-color: lightgrey;
+}
+table, tr, td {
+    border: 2px solid grey;
+    border-collapse: collapse;
 }
 </style> 
     <meta charset="utf-8">
@@ -59,14 +57,37 @@
 
 </head>
 <body>
-  <div style="height:70%;background-image:url(images/layer1.png);text-decoration:none; font-family: 'Amatic SC'; color: white;font-size: 60px ">
-    <p>Under Construction...</p>
-    <p>Under Construction...</p>
-    <p align="right" style="color: black";> Under Construction..................... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <!-- <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">Under Construction...</p> -->
+  <div class = "parallax-window"> 
+    <!-- <div class = "parallax-window"> 
+    <a style="text-decoration:none; font-family: 'Amatic SC'; color: white;">Placeholder quote from Shining: "All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy."</a>
+  </div> -->
+    <img src="images/graphics.png"/>
+  </div>
+
+  <div style="height:79%; text-decoration:none; font-family: 'Amatic SC'; color: white;font-size: 60px">
+    <div style="width: 100%">
+    <table border=1>
+      <tr>
+        <td>
+          <img src="prj/spiral.gif" width="20%" style="float:left; display:inline; width:70%;margin:10%"></td>
+          <td><img src="prj/dancer.gif" width="20%" style="float:left; display:inline; width:70%;margin:10%"></td>
+          <td><img src="prj/ski.gif" width="20%" style="float:left; display:inline; width:70%;margin:10%"/></td>
+        <td><img src="prj/curves.gif" width="20%" style="float:left; display:inline; width:70%;margin:10%"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="prj/walk.gif" width="20%" style="float:left; display:inline; width:70%;margin:10%"></td>
+          <!-- <td><img src="prj/color.png" width="20%" style="float:left; display:inline; width:50%;margin:10%"></td> -->
+          <!-- <td><img src="prj/cat_dog.jpg" width="20%" style="float:left; display:inline; width:70%;margin:10%"/></td>
+        <td><img src="prj/cv2.jpg" width="20%" style="float:left; display:inline; width:70%;margin:10%"/>
+        </td> -->
+      </tr>
+   </table>
+ </div>
 </div>
-  <div class = "parallax-window"> </div>
-  <div style="height:70%;background-image:url(images/layer2.png);text-decoration:none; font-family: 'Amatic SC'; color: white;font-size: 60px ">
+  <div class = "parallax-window"><img src="images/network.png"/></div>
+  <div style="height:70%;text-decoration:none; font-family: 'Amatic SC'; color: white;font-size: 60px ">
     <p>Under Construction...</p>
     <p>Under Construction...</p>
     <p align="center" style="color: black";> Under Construction..................... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
