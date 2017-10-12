@@ -15,6 +15,32 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+        <style>
+.parallax-window {
+    /* The image used */
+    background-image: url("img/background.png");
+    background-repeat: repeat-y;
+    /* Set a specific height */
+    height:300%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*table{
+  border-spacing:5px;
+}*/
+td img {
+  vertical-align: middle;
+  background-color: lightgrey;
+}
+table, tr, td {
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+</style> 
 
 <!-- <div class="navblock"> -->
     <button>
@@ -31,18 +57,57 @@
 
 </head>
 <body>
+        <div class = "parallax-window">
+        <table border="0">
+              <tr border="0">
+                <td>
+                  <img src="arts/1.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"></td>
+                  <td><img src="arts/image1.jpg" width="20%" style="float:center; display:inline; width:70%;margin:10%"></td>
+                  <td><img src="arts/image3.jpg" width="20%" style="float:center; display:inline; width:55%;margin:10%"/></td>
+                <td><img src="arts/4boys.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"/>
+                </td>
+              </tr>
+              <tr border="0">
+                <td>
+                  <img src="arts/cat.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"></td>
+                  <td><img src="arts/sketch1.jpg" width="20%" style="float:center; display:inline; width:70%;margin:10%"></td>
+                  <td><img src="arts/sketch2.jpg" width="20%" style="float:center; display:inline; width:55%;margin:10%"></td>
+                  <td><img src="arts/IMG_9651.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"></td>
+              </tr>
+              <tr border="0">
+                <td>
+                  <img src="arts/self.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"></td>
+                  <td><img src="arts/eye.jpg" width="20%" style="float:center; display:inline; width:70%;margin:10%"></td>
+                  <td><img src="arts/design.png" width="20%" style="float:center; display:inline; width:55%;margin:10%"></td>
+                  <td><img src="arts/IMG_7517.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="arts/666.jpg" width="20%" style="float:center; display:inline; width:60%;margin:10%"></td>
+                  <td><img src="arts/aa.jpg" width="20%" style="float:center; display:inline; width:70%;margin:10%"></td>
+                  <td><img src="arts/Probe_02.jpg" width="20%" style="float:center; display:inline; width:55%;margin:10%"></td>
+                  <td><img src="arts/ee2.jpg" width="20%" style="float:center; display:inline; width:70%;margin:10%"></td>
+              </tr>
+              <tr>
+                <td><p style="font-family: 'Amatic SC'; color: black;font-size: 60px" >TO BE CONTINUED....</p></td>
+              </tr>
+           </table>
+    <!-- </li> -->
+</div>
 
-    <div id="container1" class="container">
+<!--     <div id="container1" class="container">
         <ul id="scene1" class="scene">
             <li class="layer" data-depth="0.00"><img src="img/background.png"></li>
             <li class="layer" data-depth="0.00">
                 <div id="slide" class="slide">
                     <p style="text-decoration:none; font-family: 'Amatic SC'; color: white; font-size: 60px">UNDER CONSTRUCTION</p>
+                    
                 </div>
             </li>
 
+
         </ul>
-    </div>
+    </div> -->
     <!-- Scripts -->
 
     <script src="deploy/parallax.js"></script>
